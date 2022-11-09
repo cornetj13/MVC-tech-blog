@@ -1,0 +1,31 @@
+{
+  "name": "mvc-tech-blog",
+  "version": "1.0.0",
+  "description": "A Full stack MVC tech blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "seed": "node seeds/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cornetj13/MVC-tech-blog.git"
+  },
+  "author": "Jonathan Cornet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cornetj13/MVC-tech-blog/issues"
+  },
+  "homepage": "https://github.com/cornetj13/MVC-tech-blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.5"
+  }
+}
