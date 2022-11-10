@@ -1,3 +1,251 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variable Declaration */
+:root {
+  --primary-color: #395144;
+  --secondary-color: #4E6C50;
+  --tertiary-color: #AA8B56;
+  --primary-text: #F0EBCE;
+}
+
+/* HTML Element */
+html {
+  background-color: var(--secondary-color);;
+}
+
+
+/* Body Element */
 body {
-  background-color: salmon;
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* Header Elements */
+nav {
+  background-color: var(--secondary-color);
+  color: var(--primary-text);
+  padding: 2em 0em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid var(--border-color);
+}
+
+.display-name-box {
+  background-color: var(--primary-color);
+  height: auto;
+  width: auto;
+  padding: 1em;
+  text-align: center;
+  border-top: 2px solid var(--tertiary-color);
+  border-right: 3px solid var(--tertiary-color);
+  border-bottom: 4px solid var(--tertiary-color);
+  border-radius: 0em 1em 1em 0em;
+}
+
+.display-name-box h1 {
+  margin-left: 4em;
+  margin-right: 1em;
+}
+
+.blog-nav-box {
+  background-color: var(--primary-color);
+  height: auto;
+  width: auto;
+  padding: 0.5em;
+  border-top: 2px solid var(--tertiary-color);
+  border-left: 3px solid var(--tertiary-color);
+  border-bottom: 4px solid var(--tertiary-color);
+  border-radius: 1em 0em  0em 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  padding: 0.5em;
+}
+
+nav a {
+  margin: 0.5em;
+  color: var(--primary-text);
+  padding: 0em 2em;
+  position: relative;
+  text-decoration: none;
+}
+
+nav li:hover {
+  transform: scale(1.2, 1.2);
+  transition: transform ease-in-out 250ms;
+}
+
+nav a:hover {
+  color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+/* Main Elements */
+main {
+  background-color: var(--primary-color);
+}
+
+/* Home Elements */
+.heading {
+  padding: 20px 12px 10px 20px;
+  color: var(--primary-text);
+  font-weight: bold;
+	border-bottom: 2px solid var(--tertiary-color);
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+.post {
+  color: var(--primary-text);
+  padding: 20px 12px 10px 20px;
+}
+
+.card {
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 2px solid var(--tertiary-color);
+  border-radius: 10px;
+}
+
+.post h3 {
+  margin: 5px;
+  margin-bottom: 30px;
+}
+
+.post h4 {
+  margin: 10px;
+}
+
+.post p {
+  margin-left: 10px;
+}
+
+.comment-btn {
+  display: block;
+  background: var(--secondary-color);
+	color: var(--primary-text);
+	margin: 10px;
+	padding: 8px 15px 8px 15px;
+  border: 2px solid var(--primary-text);
+}
+
+.comment-btn:hover {
+	background: var(--primary-text);
+	color: var(--secondary-color);
+}
+
+/* Dashboard Elements */
+.dashboard {
+  padding: 20px 12px 10px 20px;
+  color: var(--primary-text);
+  font-weight: bold;
+	border-bottom: 2px solid var(--tertiary-color);
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+/* Form Elements */
+.form {
+	max-width: 500px;
+	padding: 20px 12px 10px 20px;
+  color: var(--primary-text);
+}
+
+.form-heading {
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid var(--tertiary-color);
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+
+.form a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+.form a:hover {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.form label {
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+
+.form label > span {
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+
+.form span.required {
+	color: #CF0A0A;
+}
+
+.form input.input-field {
+	width: 48%;	
+}
+
+.form input.input-field {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 3px solid var(--primary-text);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+
+.form .input-field:focus {
+	border: 3px solid var(--tertiary-color);
+}
+
+.form input[type=submit],
+.form input[type=button] {
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: var(--secondary-color);
+	color: var(--primary-text);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.form input[type=submit]:hover,
+.form input[type=button]:hover {
+	background: var(--primary-text);
+	color: var(--secondary-color);
+}
+
+/* Footer Elements */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-text);
+  padding: 2em;
+  text-align: center;
+  border-top: 5px solid var(--border-color);
 }

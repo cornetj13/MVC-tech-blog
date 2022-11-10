@@ -8,14 +8,34 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header>
-    This is a header!
+    <!-- Header -->
+  <header>  
+    <!-- Nav Bar -->
+    <nav>
+      <!-- Display Page Name -->
+      <div class="display-name-box">
+        <h1>The Tech Blog</h1>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="blog-nav-box">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/dashboard">Dashboard</a></li>
+          {{#if logged_in}}
+            <li><a href="/api/users/logout">Logout</a></li>
+          {{else}}
+            <li><a href="/login">Login</a></li>
+          {{/if}}
+        </ul>
+      </div>
+    </nav>
   </header>
   <main>
     {{{body}}}
   </main>
   <footer>
-    Project 2022
+    <h4>The Tech Blog - &copy 2022 Jonathan Cornet Webpage Production</h4>
   </footer>
 </body>
 </html>

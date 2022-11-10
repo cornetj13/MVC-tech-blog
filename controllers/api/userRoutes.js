@@ -12,7 +12,7 @@ router.post('/', async (req, res) => {
       res.status(200).json(userData);
     });
   } catch (err) {
-    res.status(400).json(err);
+    res.status(500).json(err);
   }
 });
 
@@ -48,14 +48,10 @@ router.post('/login', async (req, res) => {
   }
 });
 
-router.post('/logout', (req, res) => {
-  if (req.session.logged_in) {
-    req.session.destroy(() => {
-      res.status(204).end();
-    });
-  } else {
-    res.status(404).end();
-  }
-});
+// Logout - logs person out if Logout link is clicked.
+router.get("/logout", (req, res) => {
+  req.session.destroy();
+  res.redirect("/");
+})
 
 module.exports = router;

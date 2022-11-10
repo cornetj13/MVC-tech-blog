@@ -1,3 +1,15 @@
-<h1>This is the home page!</h1>
-<h2>All posts</h2>
-{{#each}}
+<h2 class="heading">Posts:</h2>
+<div class="post">
+  {{#if logged_in}}
+    <h3>Feel free to leave a comment, {{user_name}}!</h3>
+  {{/if}}
+  {{#each posts}}
+    <div class="card">
+      <h4>{{title}}</h4>
+      <p>{{comment}}</p>
+      {{#if ../logged_in}}
+        <button class="comment-btn">Leave a comment!</button>
+      {{/if}}
+    </div>
+  {{/each}}
+</div>

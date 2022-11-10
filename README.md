@@ -1,7 +1,4 @@
-# MVC-tech-blog
-A tech blog that follows the MVC architectural/design pattern.
-
-# E-commerce Back End
+# Tech Blog Designed With MVC
 
 ![GitHub License](https://img.shields.io/badge/License-MIT-green?style=plastic)
 
@@ -15,7 +12,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 ## Description
 
-// TODO: ADD DESCRIPTION HERE
+This application is a tech blog that follows the MVC architectural/design pattern. A user is able to see all posts made by other users. They can also create or log into an account. If they log into their account and have post history, they can see it in their dashboard. Furthermore, they can edit old posts and leave a comment on any post when logged in. The program is designed using the Model-View-Controller design pattern. This application also meets the following acceptance criteria:
 
 ```md
 GIVEN a CMS-style blog site
@@ -53,11 +50,13 @@ WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 ```
 
-// TODO: PICTURE OF THE APP
+The landing page looks as follows:
 
-An example GET request looks as follows:
+![landing-page-example](./assets/images/landing-page.png)
 
-![get-example](./assets/images/get.png)
+The signup page looks as follows:
+
+![login-page-example](./assets/images/login-page.png)
 
 The following link leads to a demonstration of the application being used:
 
@@ -79,9 +78,17 @@ Video of usage:
 
 The following packages need to be installed in order to run the application:
 
+Bcrypt: https://www.npmjs.com/package/bcrypt
+
+Connect Session Sequelize: https://www.npmjs.com/package/connect-session-sequelize
+
 Dotenv: https://www.npmjs.com/package/dotenv
 
 Express: https://www.npmjs.com/package/express
+
+Express Handlebars: https://www.npmjs.com/package/express-handlebars
+
+Express Session: https://www.npmjs.com/package/express-session 
 
 Node MySQL 2: https://www.npmjs.com/package/mysql2
 
@@ -110,13 +117,25 @@ npm run seed
 npm run start
 ```
 
+Finally, the website can be viewed locally through localhost and the port option of 3001:
+
+http://localhost:3001/
+
 ## Credits
 
 This following packages are credited with helping create this application:
 
+Bcrypt is used for hashing passwords: https://www.npmjs.com/package/bcrypt
+
+Connect Session Sequelize allows session data to be stored in a SQL using sequelize: https://www.npmjs.com/package/connect-session-sequelize
+
 Dotenv is used for loading environment configuration variables: https://www.npmjs.com/package/dotenv
 
 Express is used as a web routing framework: https://www.npmjs.com/package/express
+
+Express Handlebars allows the Handlebars view engine to work with express: https://www.npmjs.com/package/express-handlebars
+
+Express Session allows express to utilize session data: https://www.npmjs.com/package/express-session 
 
 Node MySQL 2 is used for connecting with and querying the database: https://www.npmjs.com/package/mysql2
 
