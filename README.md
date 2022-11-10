@@ -60,9 +60,7 @@ The signup page looks as follows:
 
 The following link leads to a demonstration of the application being used:
 
-Video of usage:
-
-// TODO: VIDEO NEEDED HERE
+// TODO: ADD LINK
 
 ## Table of Contents
 
