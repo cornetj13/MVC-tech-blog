@@ -60,7 +60,7 @@ The signup page looks as follows:
 
 The following link leads to a demonstration of the application being used:
 
-// TODO: ADD LINK
+https://jon-mvc-tech-blog.herokuapp.com/
 
 ## Table of Contents
 
